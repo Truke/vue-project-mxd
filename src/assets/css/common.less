@@ -1,0 +1,362 @@
+@charset "utf-8";
+body{
+	background:#eee; 
+	line-height:0.96rem;
+	font-size:0.48rem;
+	color:#333;
+}
+.none{
+	display:none;
+}
+.fl{
+	float:left
+}
+.fr{
+	float:right
+}
+.clearfix {
+	display:block;
+	zoom:1;
+	&:after {
+		content:".";
+		display:block;
+		height:0;
+		clear:both;
+		visibility:hidden;
+	}
+}
+.s-t-center{text-align:center}
+.s-t-right{text-align:right}
+.s-org{color:#fe6f06}
+.s-green{color:#4bb462}
+.s-red{color:#ff0000}
+.s-99{color:#999;}
+.pr{position:relative;}
+//padding+margin
+.pTop95{padding-top:1.9rem;}
+.width-90{
+	  width:90%;
+		margin: 0 auto;
+}
+.width-95{
+  width:95%;
+   margin:0 auto;
+ }
+body{
+	background:#eee; 
+	line-height:0.96rem;
+	font-size:0.48rem;
+	color:#333;
+	-webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+//页面公用的样式
+.warp{width:100%;}
+/*锁屏*/
+.f_mask {
+	position:fixed;top:0;left:0;width:100%;height:100%;padding:0;margin:0;z-index:9998;background:#000; 
+	opacity:0.55; 
+}
+.u-error-tips span{
+    font-size: .45rem !important;
+}
+[data-type=icon] input[type=password]:hover, [data-type=icon] input[type=text]:hover {
+    border-color: #ddd !important;
+}
+[data-type=icon] input[type=password]:focus, [data-type=icon] input[type=text]:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+// input
+.my-logo{
+		width: 100%;
+		height: 1.76rem;
+		margin:1rem 0;
+		text-align:center;
+		img{
+				width: 4.98rem;
+				height: 100%;
+		}
+}
+.my-button{
+	  width:100%;
+	  background: #fe6f06;
+		height: 1.9rem;
+		line-height: 1.9rem;
+		color:#fff;
+		font-size:.68rem;
+		text-align: center;
+		position: fixed;
+		bottom:0;
+		left:0;
+}
+.my-form{
+		.u-input{
+				width: 100%;
+				height: 1.76rem;
+				line-height: 1.76rem;
+				position: relative;
+				background:#fff;
+				border-radius:3px;
+				.me-ion{
+						top:.5rem;
+						left:.35rem;
+						font-size: .8rem;
+						color: #bbb;
+				}
+				input{
+						width: 100%;
+						height: 100%;
+						font-size: 0.6rem;
+						padding-left: 1.5rem;
+				}
+				input.pl20{padding-left:.5rem;}
+				.u-w70{
+					width:65%;
+				}
+				span{
+						position: absolute;
+						top:0rem;
+						right:.35rem;
+						color: #8d8d92;
+						font-size: .7rem;
+				}
+				em{
+						position: absolute;
+						top:0rem;
+						right:1.35rem;
+						color: #8d8d92;
+						font-size: .7rem;
+   			}
+		}
+		.me-u-btn[data-size=block]{
+				font-size:.76rem;
+				padding:0;
+				height:1.76rem;
+				line-height:1.76rem;
+				margin-top:.32rem;
+				border-radius:3px;
+		}
+		[data-type=icon]{
+				margin-bottom:0;
+		}
+		[data-type=icon] input[type=password], [data-type=icon] input[type=text]{
+				border:none;
+		}
+}
+.me-u-btn[data-color=orange]{
+		background:#fe6f06;
+}
+.u-btn-small{
+	display:inline-block;width:1.48rem;height:0.8rem;border-radius:3px;border:1px solid #fe6f06;
+	background:#fff;line-height:0.8rem;font-size:0.44rem;color:#fe6f06;
+}
+.u-btn-small.blue{border:1px solid #7193e9;color:#7193e9}
+.u-error{
+	height:1rem;
+	line-height:1rem;
+	color:#fa6a6c;
+}
+.u-message{width:35%;display:block;color:#fe6f06;background:#fff;margin:.5rem 0;
+		height:0.76rem;border-left:1px solid #898989;line-height:0.76rem;text-align:center;
+	}
+// tab
+.tabTitle{
+    background:#fff;
+    padding:.4rem 0;
+		margin-bottom:.32rem;
+    .titleCon{
+        height:1.16rem;
+        line-height:1.16rem;
+        overflow:hidden;
+        border:1px solid #737373;
+        border-radius:3px;
+        text-align:center;
+        span{
+            color:#737373;
+            &.active{
+                color:#fff;
+                background:#737373;
+            }
+        }
+     }
+  }
+	// jx-bank-logo
+	.bank-logo{
+		height:1.24rem;
+		text-align:center;
+		margin:.6rem;
+		img{
+				height:100%;
+				margin:0 .7rem;
+				display:inline-block;
+		}
+}
+//header
+.header{height:1.9rem;background:#fe6f06;
+	p{
+		position:relative;;width:100%;color:#fff;font-size:.68rem;line-height:1.9rem;text-align:center;
+	}
+	.back{
+		position:absolute;top:0;left:0;display:block;width:1.9rem;height:1.9rem;
+		background:url(../images/l_arrow.png) no-repeat center;
+		background-size:auto 0.9rem;
+	}
+}
+// tab
+.tabTitle{
+    background:#fff;
+    padding:.4rem 0;
+		margin-bottom:.32rem;
+    .titleCon{
+        height:1.16rem;
+        line-height:1.16rem;
+        overflow:hidden;
+        border:1px solid #737373;
+        border-radius:3px;
+        text-align:center;
+        span{
+            color:#737373;
+            &.active{
+                color:#fff;
+                background:#737373;
+            }
+        }
+     }
+  }
+	// jx-bank-logo
+	.bank-logo{
+		height:1.24rem;
+		text-align:center;
+		margin:.6rem;
+		img{
+				height:100%;
+				margin:0 .7rem;
+				display:inline-block;
+		}
+}
+/*
+ * 
+ */
+#app {
+  .vux-header{
+    padding: 0;
+  }
+  .vux-header .vux-header-left{
+    top:0;
+    left:0;
+    .left-arrow{
+      width: 1.9rem;
+      height: 1.9rem;
+      left:0;
+      top:0;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAtCAYAAABbAsDYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMzlDODkzQTk0MzcxMUU3QjkzN0Y3NEI4QjVDNDBDMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMzlDODkzQjk0MzcxMUU3QjkzN0Y3NEI4QjVDNDBDMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjEzOUM4OTM4OTQzNzExRTdCOTM3Rjc0QjhCNUM0MEMwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjEzOUM4OTM5OTQzNzExRTdCOTM3Rjc0QjhCNUM0MEMwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+b8BmMwAAATlJREFUeNq02DsKwkAQBuAotj7BwpMIdiLewMbeI6iFheAtvIFg61tsPZCdja4zkqCGNZnd/WfhD2yy8JHNa7JFY0ykkCZlQWlwvxThW4OyovQobcqoqACsY4Bbn9JBThFPzcV82oMyphS0gfdxdQCB5AKhiAgIQepSwBdh4CwFfBBnwBXxAlyQNPCUAlLEBkxdplkdyEMgQBYCA/4hNSRgQxg4IYE0ogJ8I2pAgrRSwJ0yQRYWvJmb33ZAVy9cSCwp269ioEuZQMuLWCtTNprXRB1K71CBbDsZ2mo+8UkqSCjrIAzKGwCBJIOCIelAGzRGIzYIXq0EQT63pDPk+4AxtNeshZNUpVDoy08EIV7luRDq65cJIT+z/6ACeiXCBg3QiwU3ypByjPs7ylVjXSX5aZ3FZxa9BBgA2Iul5fxfj0kAAAAASUVORK5CYII=) no-repeat center;
+      background-size: auto 0.9rem;
+      &:before{
+        display:none;
+      }
+    }
+  }
+  .vux-header-title-area, .vux-header .vux-header-title{
+    height: 1.9rem;
+    line-height: 1.9rem;
+    box-sizing: border-box;
+    font-size: .68rem;
+  }
+  .vux-header .vux-header-right a{
+    color: #fff;
+    font-size: .62rem;
+  }
+  .weui-cells{
+    font-size: .62rem;
+  }
+}
+.weui-toast{
+  padding: 0 .4rem;
+}
+.weui-dialog{
+  .weui-dialog__bd{
+    min-height: auto;
+  }
+  .weui-dialog__btn_primary{
+    color: #fe6f06;
+  }
+}
+.my-tip{
+		background:#ffde6a;height:1rem;line-height:1rem;color:#b74d00;text-align:center;
+}
+.s-tips{
+	color:#666;font-size:0.48rem;line-height:0.8rem;
+	padding-top:0.6rem;
+}
+
+.couponNav{
+    width:100%;background:#fff;line-height:1.9rem;
+    .w-70{width:65%;margin:0 auto}
+    span{
+        text-align:center;font-size:0.6rem;
+    }
+    span.active{
+       border-bottom:2px solid #fe6f06;color:#fe6f06;
+    }
+}
+.u-select{
+	width: 100%;
+	height: 1.76rem;
+	line-height: 1.76rem;
+	position: relative;
+	background: #fff;
+	border:1px solid #dbdbdb;
+	font-size: 0.6rem;
+	padding-left:0.4rem;overflow:hidden;
+	span,select{
+		display:block;height:100%;background:#fff;
+		position:relative;
+		color:#333;
+	}
+	select{position:absolute;left:0px;top:0px;
+		width:100%;height: 1.70rem;line-height:1.59rem;
+		border:0;outline:0;background:#fff;opacity:0;
+	}
+	
+}
+.bankcard{
+    h2{height:1.6rem;line-height:1.6rem;font-size:0.48rem;color:#666}
+
+}
+//账户首页
+.ucenter-bg{
+	background:#fff;
+	.u-c-upper{
+		padding:0.8rem 0;
+		text-align:center;color:#999;
+		b{color:#fe6f06;font-size:1.26rem;}
+		
+	}
+}
+.markMgs{
+	position:absolute;
+	width:60%;
+	top:50%;
+	left:50%;
+	margin-top:-2.2rem;
+	margin-left:-30%;
+	background:#fff;
+	border-radius:8px;
+	height:4.4rem;
+	overflow:hidden;
+	z-index:9999;
+	p{
+		padding:.8rem 0;text-align:center;
+		font-size:.58rem;
+	}
+	.me-u-btn{
+		border-radius:0;
+	}
+}
+.noData{
+	padding-top:1rem;font-size:.6rem;
+	line-height:1rem;
+	text-align:center;
+}
